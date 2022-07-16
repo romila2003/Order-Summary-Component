@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 100vw;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.whole-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 450px;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.img {
+    width: 100%;
+}
+
+.big-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.box {
+    padding: 1em;
+    text-align: center;
+}
+
+
+h2 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.desc {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    color: hsl(224, 23%, 60%);
+    line-height: 1.7em;
+    padding: 1em 0 1em 0;
+    width: 76%;
+    font-weight: 500;
+}
+
+p {
+    font-size: 500;
+}
+
+.music-box {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1em;
+    border-radius: 5%;
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.music-note {
+    margin-right: auto;
+}
+
+.music-price {
+    padding-left: 1.5em;
+}
+
+.plan {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin-top: 3px;
+}
+
+.price {
+   color: hsl(224, 23%, 55%); 
+}
+
+.change {
+    margin-left: auto;
+    margin-top: 10px;
+}
+
+.change:hover {
+    color: #766CF1;
+}
+
+#buttons {
+    margin-top: 5%;
+}
+
+button {
+    border: none;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 0.8em;
+    font-size: 15px;
+}
+
+.btn1 {
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    padding: 12px 7px;
+    width: 85%;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 13px 20px #D6D4FF;
+}
+
+.btn1:hover {
+    background-color: #766CF1;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    cursor: pointer;
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 440px) {
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .whole-box {
+        margin-top: 100px;
+    }
+
+    img {
+        width: 100%; 
+    }
+    
+    .desc {
+        font-size: 14px;
+    }
+
+    .music-box {
+        font-size: 14px;
+    }
+
+    .price {
+        padding-top: 0.3em;
+    }
+
+    .change {
+        font-size: 13px;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background-image: url(/images/pattern-background-desktop.svg);
+    }
+}
